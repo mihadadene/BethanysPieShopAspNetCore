@@ -1,0 +1,18 @@
+﻿@model IEnumerable<BethanysPieShopAspNetCore.Models.Pie>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=devide-width" />
+</head>
+<body>
+    <h2>@ViewBag.Title</h2>
+    @foreach(var pie in Model)
+    {
+        <div>
+            <h2>@pie.Name</h2>
+            <h2>@pie.Price.ToString("c")</h2>
+            //*<h4>@pie.Category.VategoryName</h4>*/
+        </div>
+    }
+</body>
+</html>
